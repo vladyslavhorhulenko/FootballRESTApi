@@ -1,0 +1,22 @@
+version: '3.7'
+
+services:
+  db:
+    image: "postgres"
+    container_name: "football-postgres"
+    restart: always
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=465596
+      - POSTGRES_DATABASE=FootballDB
+      - PGHOST=localhost
+    ports:
+      - 5432:5432
+
+  footballApp:
+    image: "football-app"
+    container_name: "fa"
+    ports:
+      - 8080:8080
+    links:
+      - db

@@ -1,0 +1,6 @@
+com\vladid\controller\FootballController.class
+com\vladid\FootballApp.class
+com\vladid\repository\PlayerRepository.class
+com\vladid\repository\TeamRepository.class
+com\vladid\entity\Player.class
+com\vladid\entity\Team.class

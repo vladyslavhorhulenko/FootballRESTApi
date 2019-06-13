@@ -1,0 +1,4 @@
+FROM openjdk:8
+ADD out/artifacts/springjpapostgres_jar/springjpapostgres.jar springjpapostgres.jar
+EXPOSE 8080
+ENTRYPOINT ["java", "-jar", "springjpapostgres.jar"]

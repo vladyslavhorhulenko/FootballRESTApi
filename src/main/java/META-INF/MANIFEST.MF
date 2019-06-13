@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Built-By: Radouane ROUFID
+Build-Jdk: 1.7.0_79
+Created-By: Apache Maven 3.3.3
+Main-Class: com.vladid.FootballApp
+Archiver-Version: Plexus Archiver
+
