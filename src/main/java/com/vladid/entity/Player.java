@@ -17,7 +17,7 @@ public class Player {
     @Column(name = "name_player")
     private String namePlayer;
 
-    @Column(name = "surn_player")
+    @Column(name = "surname")
     private String surnPlayer;
 
     @Column(name = "position")
@@ -28,7 +28,7 @@ public class Player {
 
 
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "id_team")
+    @JoinColumn(name = "team")
     private Team idTeam;
 
     public Player(String namePlayer, String surnPlayer, String position, Date birthday, Team idTeam){

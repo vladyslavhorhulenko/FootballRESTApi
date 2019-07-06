@@ -19,8 +19,8 @@ public class Team {
 
 
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "id_captain")
-    private Player idCaptain;
+    @JoinColumn(name = "captain")
+    private Player captain;
 
     public Team(String nameTeam, Player captain){
         this.setNameTeam(nameTeam);
@@ -50,10 +50,10 @@ public class Team {
     }
 
     public Player getCaptain(){
-        return this.idCaptain;
+        return this.captain;
     }
 
     public void setCaptain(Player captain){
-        this.idCaptain = captain;
+        this.captain = captain;
     }
 }
